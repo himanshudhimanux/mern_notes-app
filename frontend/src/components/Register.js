@@ -106,7 +106,7 @@ const Register = () => {
                     {picmessage && (<ErrorMessage variant='danger'>{picmessage}</ErrorMessage>)}
                     <Form.Group controlId="pic" className="mb-3">
                         <Form.Label>Upload Profile Picture</Form.Label>
-                        <Form.File 
+                        <Form.Control 
                             onChange={(e) => postDetails(e.target.files[0])}
                             type = "file"
                             label = "Upload Profile Picture"

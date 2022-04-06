@@ -30,7 +30,10 @@ body::-webkit-scrollbar-thumb {
 /* ======== Landing page ====== */
 
 .landing-page {
-    background: beige;
+    background-image: linear-gradient(45deg, rgba(145, 146, 122, 0.62), rgba(0, 0, 0, 0.62)),
+    url('./images/notes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     padding: 96px 0px;
@@ -39,11 +42,13 @@ body::-webkit-scrollbar-thumb {
 .Landing-page-title h1 {
     text-align: center;
     font-size: 62px;
+    color: #fff;
 }
 
 .Landing-page-subtitle p {
     text-align: center;
     font-size: 16px;
+    color: #f7f7f7;
 }
 
 .lading-page-buttons {
@@ -142,6 +147,10 @@ footer{
     .search-input {
         width: 100%;
         margin-top: 15px;
+    }
+
+    .landing-page{
+        background-position: 24% 50%;
     }
 
 }
