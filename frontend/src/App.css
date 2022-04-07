@@ -30,13 +30,24 @@ body::-webkit-scrollbar-thumb {
 /* ======== Landing page ====== */
 
 .landing-page {
-    background-image: linear-gradient(45deg, rgba(145, 146, 122, 0.62), rgba(0, 0, 0, 0.62)),
-    url('./images/notes.jpg');
+    background-image: url('./images/notes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    padding: 96px 0px;
+}
+
+.landing-page::before {
+    content: "";
+    background-color: rgb(0 0 0 / 30%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 68px;
+}
+
+.content-card {
+    transform: translate(10px, 120px);
 }
 
 .Landing-page-title h1 {
