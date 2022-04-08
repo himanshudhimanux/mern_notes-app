@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 /* ======== Landing page ====== */
 
 .landing-page {
-    background-image: linear-gradient(rgb(0 0 0 / 30%)), url('./images/notes.jpg');
+    background-image: url('./images/notes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
