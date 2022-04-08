@@ -3,7 +3,6 @@ body{
 }
 
 
-
 body::-webkit-scrollbar {
   width: 8px;
 }
@@ -30,21 +29,21 @@ body::-webkit-scrollbar-thumb {
 /* ======== Landing page ====== */
 
 .landing-page {
-    background-image: url('./images/notes.jpg');
+    background-image: linear-gradient(rgb(0 0 0 / 30%)), url('./images/notes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-.landing-page::before {
+/* .landing-page::before {
     content: "";
-    background-color: rgb(0 0 0 / 30%);
+    background-color: 
     position: absolute;
     width: 100%;
     height: 100%;
     top: 68px;
-}
+} */
 
 .content-card {
     transform: translate(10px, 120px);
@@ -130,7 +129,7 @@ footer{
 
 .copyright {
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     text-align: center;
