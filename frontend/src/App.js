@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer';
 import Header from "./components/Header";
 import LandingPage from './components/LandingPage';
 import Login from './components/Login';
@@ -28,7 +27,6 @@ function App() {
         <Route path='/profile' element={<UserProfile/>}></Route>
         <Route path='/mynotes' element={<MyNotes search={search} />}  />
      </Routes>
-     <Footer/>
     </BrowserRouter>
      
   );
